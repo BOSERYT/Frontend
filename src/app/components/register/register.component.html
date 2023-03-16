@@ -1,0 +1,53 @@
+    <div class="container">
+      <div class="screen">
+        <h3 class="title-reg">Registrate</h3>
+        <div class="screen__content">
+          <form class="login" [formGroup] = "userForm">
+            <div class="login__field">
+              <i class="login__icon fa-user"></i>
+              <input type="text" formControlName="name_therapist" class="login__input" placeholder="Nombre del terapeuta">
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input type="text" formControlName="app_therapist" class="login__input" placeholder="Apellido Paterno">
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input type="text" formControlName="apm_therapist" class="login__input" placeholder="Apellido Materno">
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input type="text" formControlName="specialty" class="login__input" placeholder="Especialidad">
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input type="text" formControlName="user_name" class="login__input" placeholder="Nombre del usuario">
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input type="text" formControlName="phone" class="login__input" placeholder="Telefono">
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input type="password" formControlName="password" class="login__input" placeholder="Contraseña">
+            </div>
+            <div class="login__field">
+              <i class="login__icon fas fa-lock"></i>
+              <input type="text" formControlName="professional_license" class="login__input" placeholder="Licencia">
+            </div>
+            <button class="button login__submit" (click)="onCreateUser()" type="submit">
+              <span  class="button__text">Registrate</span>
+              <i class="button__icon fas fa-chevron-right"></i>
+            </button>
+           <button routerLink="/login" class="button login-comeback"><span >Iniciar Sesión</span> </button>
+          </form>
+
+        </div>
+        <div class="screen__background">
+          <span class="screen__background__shape screen__background__shape4"></span>
+          <span class="screen__background__shape screen__background__shape3"></span>
+          <span class="screen__background__shape screen__background__shape2"></span>
+          <span class="screen__background__shape screen__background__shape1"></span>
+        </div>
+      </div>
+    </div>
